@@ -9,5 +9,6 @@ urlpatterns = [
     path("product_update/<int:id>/", Product_Update.as_view()),
     path("product_delete/<int:id>/", Product_Delete.as_view()),
     path("search/", Search.as_view()),
+    path('api-token-auth/', CustomAuthToken.as_view())
 
 ]
